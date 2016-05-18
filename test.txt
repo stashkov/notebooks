@@ -1,0 +1,7 @@
+Memory palaces are awesome!
+
+location = word
+image = pronounciation
+action = meaning
+
+privet kak dela!
