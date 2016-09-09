@@ -5,3 +5,85 @@ image = pronounciation
 action = meaning
 
 Nightcore - Demons!
+
+
+
+classes protects us against new types
+while data structures protects us against new functions
+
+i % 2 == 0 we found everybody who did that years ago and we shot them all
+don't treat your tests as second class citizens
+
+
+1. Choose your name thoughtfully
+2. Communicate your intent
+3. Avoid disinformation
+4. Pronounceable names
+5. Avoid incodings
+6. Choose parts of speech well
+7. The scope rule
+
+
+
+@staticmethod
+for functions inside the class that don't need to know about instance of the class
+
+@property 
+convert dotted access to method calls (e.g. .radius will be a getter .radius(5) will be a setter) 
+
+for rowno, row in enumerate(rows, start=1):
+    pass
+
+try:
+    pass
+except ValueError as err:
+    print(err)    
+
+def test(filename, *, errors='warn'):
+    pass  # forcing to use arguement specific call
+
+tuples are usually for different type data
+while arrays are for one data type
+
+
+create list of types = [str,str,int, float]    
+func(val) for func, val in zip(types, values)
+
+
+@classmethod
+def from_string(cls, s):
+    pass
+
+----
+def func(x, **kwargs):
+    print(x)
+    print (kwars)
+
+func(1, xmin=10, xmamx=20, color='red')
+1
+{'xmax':20, 'xmix':10, 'color': 'red'}
+---
+def func(x, *args):
+    print(x)
+    print(args)
+
+func(1,2,3,4,5)
+1
+(2,3,4,5)
+-----
+
+classes:
+-inherit from object()
+-instance variables for information unique to an instance
+-class variables for data shared among all instances
+-regular methods need "self" to operate on instance data
+-class methods implement alternative constructors.
+ they need "cls" so they can create subclass instances as well
+-static methods attach functions to classes.
+ they don't need either "self" or "cls".
+ static methods improve discoverability and require context to be specified
+-a property lets getter and setter methods be invoked automatically
+ by attribute access. this allows python classes to freely expose their instance variables
+-the __slots_ variable implements the flyweight design pattern
+ by supressing instance dictionaries
+   
